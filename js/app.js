@@ -25,8 +25,7 @@ function retour()
 
 {
 	var text= document.getElementById('input').value;
-	var longueur= text.length ; 
-	var fin= longueur-1 ;
+	var fin= text.length-1 ;
 	text= text.substring(0,fin);
 	document.getElementById('input').value= text;
 	;
