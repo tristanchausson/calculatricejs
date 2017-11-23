@@ -108,13 +108,73 @@ console.log(total);
 
 }
 
+
+function moins()
+{
+
+var valeur = document.getElementById("affichage").value;
+document.getElementById("affichage").value="";
+
+operateurs='-';
+total=valeur;
+
+console.log('moins '+total);
+} 
+
+
+function divise(){
+var x= document.getElementById("/").value;
+var valeur = document.getElementById("affichage").value;
+document.getElementById("affichage").value="";
+
+operateurs=x
+total=valeur;
+
+console.log(total);
+}
+
+
+function multipl()
+{
+var x= document.getElementById("x").value;
+var valeur = document.getElementById("affichage").value;
+document.getElementById("affichage").value="";
+
+operateurs=x
+total=valeur;
+
+console.log(total);
+
+}
+
+
+
+
+
 function egal()
 {
 	var x=document.getElementById("affichage").value;
 	
 	document.getElementById("affichage").value="";
-	if (operateurs="+") {
+	console.log(operateurs);
+	/*addition */
+	if (operateurs=="+") 
+	{
 		document.getElementById("affichage").value=parseInt(total)+parseInt(x);
+	}	
+	/*soustraction */
+	else if (operateurs=="-") 
+	{
+	console.log('total'+ total);
+
+	console.log('x:'+x);	
+		document.getElementById("affichage").value=parseInt(total)-parseInt(x);
 	}
+
+	else if (operateurs=="x") 
+	{document.getElementById("affichage").value=parseInt(total)*parseInt(x) ;
+	}
+
+
 
 }
