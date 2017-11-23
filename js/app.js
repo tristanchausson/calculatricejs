@@ -1,7 +1,7 @@
 /* var touches = document.querySelectorAll('div.touches'); */
 var operateurs =""
 var total=""
-
+/*fonctions*/
 function zéro() 
 {
 	var y=document.getElementById("zero").value;
