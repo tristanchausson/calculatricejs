@@ -11,17 +11,17 @@
 
 
 
-<p><input type="text" id="input"></p> 
+<p><input type="text" id="affichage"></p> 
 
 <div class="touches">
 
 	<input type="button" value="(" id="(">
 	<input type="button" value=")" id=")">
-	<input type="button" value="<-" id="retour"></br>
+	<input type="button" value="<-" id="retour" onclick="retour()"></br>
 	<input type="button" value="7" id="sept" onclick="sept()">
 	<input type="button" value="8" id="huit" onclick="huit()">
 	<input type="button" value="9" id="9">
-	<input type="button" value="+" id="+"> </br>
+	<input type="button" value="+" id="+" onclick="plus()"> </br>
 	<input type="button" value="4" id="4">
 	<input type="button" value="5" id="5">
 	<input type="button" value="6" id="6">
@@ -31,6 +31,6 @@
 	<input type="button" value="9" id="9">
 	<input type="button" value="/" id="/"></br>
 	<input type="button" value="0" id="0">
-	<input type="button" value="=" id="=">
+	<input type="button" value="=" id="=" onclick="egal()">
 	<input type="button" value="X" id="x">
 </div>
